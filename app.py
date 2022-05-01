@@ -6,7 +6,6 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
 from tensorflow.keras.models import load_model
 
-#model = tf.keras.models.load_model("TensorFlow-Streamlit-main/saved_model/my_model2.hdf5")
 model = load_model('saved_model/my_model2.hdf5')
 ### load file
 uploaded_file = st.file_uploader("Choose a image file", type="jpg")
